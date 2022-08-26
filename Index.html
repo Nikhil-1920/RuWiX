@@ -1,0 +1,42 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RuWiX</title>
+        <link rel="icon" type="image/ico" href="Favicon/RuWiX.ico">
+
+        <link rel="stylesheet" type="text/css" href="Styles/stylesheet.css"/>
+        <script type="text/javascript" src="JavaScript/Three.js"></script>
+        <script type="text/javascript" src="JavaScript/Tween.js"></script>
+        <script type="text/javascript" src="JavaScript/Rubik.js"></script>
+        <script type="text/javascript" src="JavaScript/Ruwix.js"></script>
+    </head>
+
+
+    <body class="responsive-864-container" style="max-width: 2000px; overflow: hidden; margin: 12px auto;">
+
+        <div id='controls' class="fluid col-2-2" style="margin-top: 8px;">
+
+            <select size="1" id="rubik-type">
+                <option value="2">2x2x2</option>    
+                <option value="3"selected="selected">3x3x3</option>
+                <option value="4">4x4x4</option>
+            </select>
+            
+            <button class="button" id="newrubik">New Cube</button>
+            <button class="button" id="scramble">Scramble</button>
+            <button class="button" id="undo">Solver</button> 
+        </div>
+
+        <div id="container"><div id="flatimage"></div></div>
+
+        <script type="text/javascript">
+            RubikApplication.init();
+        </script>
+    </body>
+</html>
+
+
