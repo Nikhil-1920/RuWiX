@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+
+    font-family: Monospace; background: #121212;
+    padding: 0; position: relative; color: #AAA;
+    overflow-y: scroll;
+}
+
+
+#rubik-type {
+
+    background-image: url('data: image/svg+xml; UTF8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="450" width="450"> <g> <path fill="none" d="M0 0h24v24H0z"> </path> <path d="M12 14l-4-4h8z"> </path> </g> </svg>');
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    position: relative;
+    color: #2E8B57;
+    padding: 5px; margin: 3px;
+    background-color: #dfdfdf;
+
+    text-shadow: 1px 1px 1px #800000;
+    font-size: 17px;
+    outline: none;
+    font-style: oblique;
+    font-weight: bolder;
+    
+    border: 2px solid #800000;
+    width: 95px; height: 35px;
+    line-height: 18px;
+    text-align-last: left;
+    cursor: pointer;
+    border-radius: 20px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-position: right 0px top 50%;
+    background-size: 35px; 
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+
+option {
+
+    color: #2E8B57; text-align: left;
+    text-shadow: 1px 1px 1px #800000;
+    display: inline-block;
+    font-weight: bolder; 
+}
+
+
+#rubik-type:focus, #rubik-type:hover {
+
+    border: 2px solid #800000;
+    outline: none;
+}
+
+
+.button {
+
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    font-family: 'Space Mono', monospace;
+    border: 2px solid #800000;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #dfdfdf;
+   
+    font-style: oblique;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #2E8B57;
+    text-align: center;
+    text-decoration: none;
+
+    text-shadow: 1px 1px 1px #800000;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    line-height: 24px;
+    margin: 3px;
+    cursor: pointer;
+    width: 115px; height: 35px;
+}
+
+
+.button:hover {
+
+    background: -webkit-gradient(linear, left-top, left-bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100% );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color: #dfdfdf;
+}
+
+
+.button:active {
+
+    position: relative; top: 1px;
+}
+
+
+#container {
+
+    position: relative; margin: 0 auto;
+    padding: 0; border: 0; z-index: 0;
+    cursor: pointer;
+    background-color: #121212;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.25) 5%, rgba(255, 255, 255, 0) 50%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+}
+
+
+#flatimage { 
+
+    position: absolute; z-index: 10;
+    top: 50px; right: 5px;
+}
+
+
+@media(max-width: 800px) {
+
+    #controls select {
+
+        margin: 3px 2px;
+        font-size: 13px;
+        padding: 3px;
+    }
+
+    #controls.button {
+
+        font-size: 11px; height: 25px;
+        width: 80px;line-height: 25px;
+        margin: 3px 2px;
+    }
+}
